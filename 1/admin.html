@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="box1">
+   <ul class="header">
+   <li><p>你好，请登录
+   		<a href="#">免费注册</a></p>
+   </ul>
+   <ul class="header1">
+   
+    <li><a href="#">网站导航</a></li>
+    <li class="space"></li>
+   	<li><a href="#">我的商城</a></li>
+   	<li class="space"></li>
+   	<li><a href="#">网站会员</a></li>
+   	<li class="space"></li>
+   	<li><a href="#">企业会员</a></li>
+   	<li class="space"></li>
+   	<li><a href="#">企业采购</a></li>
+   	<li class="space"></li>
+    <li><a href="#">客户服务</a></li>
+    <li class="space"></li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">我的消息<span class="caret"></span></a>
+			 <ul class="dropdown-menu">
+			 	<li class="dropdown-header"><strong>业务功能</strong></li>
+		 		<li><a href="#">我的订单</a></li>
+				<li><a href="#">购物车</a></li>
+				<li><a href="#">我的关注</a></li>
+				<li><div class="divider"></div></li>
+				<!--<li class="dropdown-header">业务功能</li>-->
+				 <li><a href="#">待处理订单</a></li>
+				<li><a href="#">咨询</a></li>
+			 </ul>
+		 </li>
+   </ul>
+</div>
+<div >
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="img/chiji.jpg" alt="tupian">
+<div class="carousel-caption">
+<p>吃鸡装备，制胜法宝。</p>
+</div>
+</div>
+
+<div class="item">
+<img src="img/int.jpg" alt="tupian">
+<div class="carousel-caption">
+<p> Intel 让畅快体验更极致。</p>
+</div>
+</div>
+
+<div class="item">
+<img src="img/ruilong.jpg" alt="tupian">
+<div class="carousel-caption">
+<p>锐龙，锐不可当。</p>
+</div>
+</div>
+</div>
+
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+	<br><br>
+  <div class="from1">
+	<div id="box">
+        <input type="text" name="search" placeholder="请输入关键字">
+		<button class="search">搜索</button>
+    </div>
+ </div> 
+<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+var timeInterval=2000;
+var arr=new Array();
+arr[0]="img/1.jpg";
+arr[1]="img/2.jpg";
+arr[2]="img/9.jpg";
+arr[3]="img/14.jpg";
+arr[4]="img/15.jpg";
+arr[5]="img/16.jpg";
+arr[6]="img/17.jpg";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+    var obj=document.getElementById("obj");
+    if (curIndex==arr.length-1) 
+    {
+        curIndex=0;
+    }
+    else
+    {
+        curIndex+=1;
+    }
+    obj.src=arr[curIndex];
+}
+</script>
+<img id=obj src ="img/1.jpg" width=200 height=100 border =0>
+ <br> <br> <br>
+	<div class="e">
+			 <div class="e2">
+              <ul>
+				   <li><p><strong>电脑整机：</strong></p></li>
+           <li><p><a href="#">台式机</a></p></li>
+				   <li><p><a href="#">游戏本</a></p></li>
+				   <li><p><a href="#">笔记本</a></p></li>
+				   <li><p><a href="#">一体机</a></p></li>
+				   <li><p><a href="#">平板电脑</a></p></li>
+				   <li><p><a href="#">服务器/工作站</a></p></li>
+				   <li><p><a href="#">笔记本配件</a></p></li>
+			  </ul>
+			 </div>
+	     <div class="e3">
+              <ul>
+				   <li><p><strong> 电脑品牌：</strong></p></li>
+                   <li><a href="#">Lenovo</a></li>
+				   <li><p><a href="#">戴尔</a></p></li>
+				   <li><p><a href="#">惠普</a></p></li>
+				   <li><p><a href="#">华硕</a></p></li>
+				   <li><p><a href="#">神州</a></p></li>
+				   <li><p><a href="#">Apple</a></p></li>
+				   <li><p><a href="#">钛度</a></p></li>
+			  </ul>
+			 </div>
+			 <div class="e4">
+              <ul>
+				   <li><p><strong> 电脑配件：</strong></p></li>
+                   <li><a href="#">组装电脑</a></li>
+				   <li><p><a href="#">显示器</a></p></li>
+				   <li><p><a href="#">cpu</a></p></li>
+				   <li><p><a href="#">显卡</a></p></li>
+				   <li><p><a href="#">主板</a></p></li>
+				   <li><p><a href="#">内存</a></p></li>
+				   <li><p><a href="#">机箱</a></p></li>
+			  </ul>
+			 </div>
+			 <div class="e5">
+              <ul>
+				   <li><p><strong> 电脑处理器：</strong></p></li>
+                   <li><a href="#">Ryzen锐龙</a></li>
+				   <li><p></p><a href="#">Intel</a></li>
+				   <li><p><a href="#">Intel i7标准电压版</a></p></li>
+				   <li><p><a href="#">Intel i7低功耗版</a></p></li>
+				   <li><p><a href="#">Inteli7</a></p></li>
+				   <li><p><a href="#">Intel i5标准电压版</a></p></li>
+				   <li><p><a href="#">Intel i5低功耗版</a></p></li>
+			  </ul>
+			 </div>
+
+	</div>
+	<br><br><br><br>
+	<div class="Photo">
+		   <div class="ImgBox" >
+			<a href=""><img src="img/1.jpg"  alt="tupian" /></a>
+			 <div class="imgbox">
+			<p> <strong>￥5988.00</strong></p>
+			  </div>  
+			<p> <a href="">机械革命（MECHREVO）深海泰坦x115.6英寸游戏电脑</a></p>
+			</div>
+			<div class="ImgBox">
+			<a href=""><img src="img/2.jpg"  alt="tupian" /></a>
+			  <div class="imgbox">
+			    <p> <strong>￥6399.00</strong></p>
+			  </div> 
+			  <p><a href="">联想（Lenovo）拯救者R720 15.6英寸电脑（i5-7300HQ 8G）</a></p>
+			</div>
+			<div class="ImgBox">
+			 <a href=""><img src="img/3.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			    <p> <strong>￥7399.00</strong></p>
+			  </div> 
+				<p><a href="">联想（Lenovo）拯救者R720 15.6英寸电脑（i7-7300HQ 8G）</a></p>
+			</div>
+			<div class="ImgBox">
+			  <a href=""><img src="img/4.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥7999.00</strong></p>
+			  </div> 
+				<p><a href="">惠普（Hp）暗影精灵3代GTX1050Ti 15.6英寸电脑</a></p>
+			</div>
+			<div class="ImgBox">
+			  <a href=""><img src="img/5.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥6188</strong></p>
+			  </div> 
+				<p><a href="">Apple MacBook Air 13.3英寸电脑 银色（2017新款Core i5 处理器）</a> </p>
+			</div>
+			<div class="ImgBox">
+			   <a href=""><img src="img/6.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥5199</strong></p>
+			  </div> 
+				<p><a href="">小米（MI）Air 13.3 英寸轻薄电脑（i5-7200u 8G）</a></p>
+			</div>
+			<div class="ImgBox">
+			<a href=""><img src="img/7.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥4499.00</strong></p>
+			  </div> 
+				<p><a href="">联想（ThinkPad）E470(20H3A004CD) 14英寸电脑</a></p>
+			</div>
+			<div class="ImgBox">
+			 <a href=""><img src="img/8.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥4799.00</strong></p>
+			  </div> 
+				<p><a href="">联想（Lenovo)小新潮5000 15 15.6英寸电脑（i7-7500U 4G 1T+128G）</a></p>
+			</div>
+			<div class="ImgBox">
+			   <a href=""><img src="img/9.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥6699.00</strong></p>
+			  </div> 
+				<p><a href="">戴尔DEELL灵越游15RR-67488 15.6英寸电脑（i7-7700HQ 8G)</a></p>
+			</div>
+			<div class="ImgBox">
+				<a href=""><img src="img/10.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥7488.00</strong></p>
+			  </div> 
+				<p><a href="">Apple MacBook Air13.3 英寸电脑 银色（2017 新款Core i5处理器）</a></p>
+			</div>
+			<div class="ImgBox">
+				<a href=""><img src="img/11.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥3999.00</strong></p>
+			  </div> 
+				<p><a href="">联想（Lenovo)扬天M7800K商用台式电脑(AMDRyzen5Pro 1500)</a></p>
+			</div>
+			<div class="ImgBox">
+				<a href=""><img src="img/12.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥7299.00</strong></p>
+			  </div> 
+				<p><a href="">惠普（Hp）暗影精灵3代GTX1050Ti 15.6英寸电脑(i7-7700HQ 8G)</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/16.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥3999.00</strong></p>
+			  </div> 
+				<p><a href="">惠普（HP）畅游人Pavilion 14-bf116TX 14英寸轻薄笔记本（i5-8250U 8G 128GSSD+1T 940MX 2G独显FHD IPS）银</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/14.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥7999.00</strong></p>
+			  </div> 
+				<p><a href="">戴尔DELL灵越游匣Master15-R4645B 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 128GSSD+1T GTX1050Ti 4G独显)黑 </a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/15.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥5666.00</strong></p>
+			  </div> 
+				<p><a href="">联想（Lenovo) AIO 310 19.5英寸一体机台式电脑（ E2-9000 4G 500G 集显 无线网卡 蓝牙 Win10）黑色 纤薄一体</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/17.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥5000.00</strong></p>
+			  </div> 
+				<p><a href=""> 戴尔(DELL)成就3267-R1308商用台式电脑整机(i3-6100 4G 500G DVD WIFI 三年上门 硬盘保留 Win10)19.5英寸 【六代i3、集显、19.5英寸显示器】</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/18.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥4999.00</strong></p>
+			  </div> 
+				<p><a href="">联想(Lenovo)Ideapad 320S 15.6英寸轻薄笔记本电脑(四核处理器A12 4G 256G固态硬盘 正版Office)银 金属材质A面,超窄边框,搭配256G固态硬盘,2G 独显,超具性价比！</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/28.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥2999.00</strong></p>
+			  </div> 
+				<p><a href="">亚当贝尔 酷睿i5/独显/8G内存/固态硬盘 家用商务办公游戏台式电脑主机整机全套 单主机 套餐二（酷睿I5+GTX1050独显）</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/20.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥4555.00</strong></p>
+			  </div> 
+				<p><a href=""> 联想（Lenovo）扬天M4000e 商用台式电脑整机（i3-6100 4G 500G 集显 WIN10 4年上门服务）19.5英寸 联想扬天M4000e系列</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/21.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥6000.00</strong></p>
+			  </div> 
+				<p><a href="">Apple MacBook Air 11.6英寸笔记本电脑 银色(Core i5 处理器/4GB内存/128GB SSD闪存 MJVM2CH/A) 五代i5 处理器.</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/22.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥6666.00</strong></p>
+			  </div> 
+				<p><a href=""> 联想（Lenovo）天逸510S商用台式办公电脑整机（i3-7100 4G1T 集显 WiFi 蓝牙 三年上门 win10）21.5英寸 【新款天逸510s】H3060升级版！</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/23.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥4500.00</strong></p>
+			  </div> 
+				<p><a href="">戴尔DELL灵越燃7000 II R1625S 14.0英寸轻薄窄边框笔记本电脑(i5-8250U 8G 128GSSD+1T MX150 2G独显 IPS)银 </a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/24.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥5500.00</strong></p>
+			  </div> 
+				<p><a href="">联想(Lenovo)Ideapad 320S 15.6英寸轻薄笔记本电脑(四核处理器A12 4G 256G固态硬盘 正版Office)银 金属材质A面/a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/25.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥6000.00</strong></p>
+			  </div> 
+				<p><a href="">戴尔DELL灵越燃7000 II R1605S 14.0英寸轻薄窄边框笔记本电脑(i5-8250U 8G 256GSSD IPS Win10)银</a></p>
+			</div>
+				<div class="ImgBox">
+				<a href=""><img src="img/26.jpg"  alt="tupian" /></a>
+				<div class="imgbox">
+			<p> <strong>￥10000.00</strong></p>
+			  </div> 
+				<p><a href=""> 小米(MI)Air 13.3英寸全金属轻薄笔记本电脑(i5-7200U 8G 256G固态硬盘 全高清屏 背光键盘 Win10)银 【全金属轻薄本s</a></p>
+			</div>
+		</div>
+	<div class="f">
+		<div class="container-fluid">
+        <div class="row">
+		<div class="f2">
+		<div class="col-sm-2">
+           <ul>
+			   <li><strong>购物指南</strong></li>
+			   <li><a href="">购物流程</a></li>
+			   <li><a href="">会员介绍</a></li>
+			   <li><a href="">生活旅行</a></li>
+			   <li><a href="">常见问题</a></li>
+		   </ul>
+		</div>
+		<div class="col-sm-2">
+           <ul>
+			   <li><strong>配送方式</strong></li>
+			   <li><a href="">上门自提</a></li>
+			   <li><a href="">211限时达</a></li>
+			   <li><a href="">配送服务查询</a></li>
+			   <li><a href="">配送费抽取标准</a></li>
+		   </ul>
+		</div>
+		<div class="col-sm-2">
+           <ul>
+			   <li><strong>支付方式</strong></li>
+			   <li><a href="">在线支付</a></li>
+			   <li><a href="">分期付款</a></li>
+			   <li><a href="">邮局汇款</a></li>
+			   <li><a href="">公司转账</a></li>
+		   </ul>
+		</div>
+		<div class="col-sm-2">
+           <ul>
+			   <li><strong>售后服务</strong></li>
+			   <li><a href="">价格保护</a></li>
+			   <li><a href="">退款说明</a></li>
+			   <li><a href="">返修/退换货</a></li>
+			   <li><a href="">取消订单</a></li>
+		   </ul>
+		</div>
+		<div class="col-sm-2">
+           <ul>
+			   <li><strong>特色服务</strong></li>
+			   <li><a href="">夺宝岛</a></li>
+			   <li><a href="">DIY装机</a></li>
+			   <li><a href="">延保服务</a></li>
+			   <li><a href="">京东E卡</a></li>
+		   </ul>
+		</div>
+		
+		</div>
+		</div>
+		</div>
+ 
+	</div>
+	<div class="footer">电脑商城 &copy; 版权所有 </div>
+	<script type="text/javascript"src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
